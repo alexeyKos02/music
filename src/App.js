@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React, { useState, useRef } from 'react';
+import {Container, Button, Alert, Form} from 'react-bootstrap';
+import { CSSTransition } from 'react-transition-group';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import NavBar from "./components/NavBar";
 
 function App() {
+  const [showButton, setShowButton] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
+  const nodeRef = useRef(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div/>
   );
 }
-
 export default App;

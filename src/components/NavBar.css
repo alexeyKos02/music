@@ -1,0 +1,58 @@
+.navBar {
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 1;
+    background: #403636;
+    transition: width 400ms;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navBar:hover {
+    width: 200px;
+}
+
+svg {
+    margin-left: 2px;
+}
+
+.nav-link {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    border-radius: 0;
+    background: black;
+}
+
+.nav-pills .nav-link.active svg {
+    margin-left: 1rem;
+}
+span {
+    color: white;
+    position: relative;
+    display: block;
+    z-index: 0;
+    text-indent: -20em;
+    white-space: nowrap;
+    transition: text-indent 400ms ease-in-out;
+}
+.navBar:hover .nav-link span {
+    transition-delay: 100ms;
+}
+.navBar:hover .nav-link span {
+    text-indent: 0;
+}
+.nav-pills .nav-link div{
+    z-index: 1;
+}
+.nav-pills .nav-link.active div {
+    margin-left: -1rem;
+    border-left: solid 3px red;
+}
+.nav-item{
+    position: relative;
+}
